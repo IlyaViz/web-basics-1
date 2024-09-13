@@ -12,7 +12,7 @@ body {
         "nav content aside"
         "info info aside"
         "footer footer footer";
-    grid-template-rows: 100px auto 30px 100px;
+    grid-template-rows: 100px auto 50px 100px;
     grid-template-columns: 1fr 3fr 1fr;
 }
 
@@ -70,6 +70,12 @@ aside {
     align-items: center;
 }
 
+.info h3 {
+    margin: 5px 0px 0px 5px;
+    overflow: hidden;
+    max-height: 100%;
+}
+
 footer {
     grid-area: footer;
 }
@@ -81,6 +87,10 @@ footer h2 {
 @media (max-width: 1000px) {
     body {
         grid-template-columns: 1fr 3fr 0;
+    }
+
+    aside {
+        display: none;
     }
 }
 
