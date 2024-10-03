@@ -12,13 +12,12 @@ body {
         "nav content aside"
         "info info aside"
         "footer footer footer";
-    grid-template-rows: 100px auto 50px 100px;
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto auto;
 }
 
-p, h2 {
+p, h2, h3{
     margin: 10px 25px 10px 10px;
-    overflow-y: scroll;
     max-height: 100%;
 }
 
@@ -68,12 +67,6 @@ aside {
     background-color: lightgreen;
     display: grid;
     align-items: center;
-}
-
-.info h3 {
-    margin: 5px 0px 0px 5px;
-    overflow: hidden;
-    max-height: 100%;
 }
 
 footer {
